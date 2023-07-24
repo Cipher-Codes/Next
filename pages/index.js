@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome!<a href="#"><newPage></newPage></a>
+          Welcome!<a href="/"><newPage></newPage></a>
         </h1>
 
         <p className={styles.description}>
@@ -20,18 +20,18 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="#" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
+          <a href="/" className={styles.card}>
+            <h3>About Me &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="#" className={styles.card}>
-            <h3>Learn &rarr;</h3>
+          <a href="/" className={styles.card}>
+            <h3>Join &rarr;</h3>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="/"
             className={styles.card}
           >
             <h3>Examples &rarr;</h3>
@@ -39,7 +39,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="#two"
             className={styles.card}
           >
             <h3>Deploy &rarr;</h3>
@@ -49,6 +49,12 @@ export default function Home() {
           </a>
         </div>
       </main>
+
+      {/* <>
+        <div className={styles.two}>
+          <h3 id='two'>Hello World</h3>
+        </div>
+      </> */}
 
       <footer>
         <a
@@ -62,6 +68,7 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+      
         main {
           padding: 5rem 0;
           flex: 1;
